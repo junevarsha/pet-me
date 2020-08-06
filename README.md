@@ -20,3 +20,18 @@ Resources:
 Fonts:
 Dank mano
 fira code
+
+Tools:
+
+node -v
+npm -v
+npm init -y
+npm i -D prettier
+npm install -D eslint eslint-config-prettier
+
+Parcel - easy to setup, less power
+Webpack - more power, hard to setup
+here lets use parcel
+
+wondering how parcel/prettier commands get executed?
+Look for hidden .bin folder inside node_modules
