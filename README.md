@@ -35,3 +35,7 @@ here lets use parcel
 
 wondering how parcel/prettier commands get executed?
 Look for hidden .bin folder inside node_modules
+
+eslintrc.json
+eslint recommended - gosepl of truth
+you can question others
