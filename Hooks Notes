@@ -1,0 +1,10 @@
+SearchParams:
+
+2 way binding is not free
+everything need to be explicitly specified
+
+useState is creating a hook
+first thing is default and second is updater function
+
+Hook is offering setState for functional components
+Never put conditional or unpredicatable like if, for for hooks
