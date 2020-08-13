@@ -9,8 +9,7 @@
     "build": "parcel build src/index.html --out-dir docs --public-url ./",
     "format": "prettier --write \"src/**/*.{js,jsx,html}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run build && git add . && git commit -a -m 'latest build' && git push origin master"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
