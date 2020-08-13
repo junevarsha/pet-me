@@ -7,7 +7,7 @@
   "scripts": {
     "start": "NODE_ENV=development parcel src/index.html --open",
     "format": "prettier --write \"src/**/*.{js,jsx,html}\"",
-    "predeploy": "rm -rf dist && parcel build src/index.html",
+    "predeploy": "rm -rf dist && parcel build src/index.html --public-url='./'",
     "deploy": "gh-pages -d dist",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
