@@ -79,4 +79,4 @@ module.exports=require("./impl"),module.exports.ANIMALS=require("./animals");
 },{"react":"n8MK","@frontendmasters/pet":"OpLS","./useDropdown":"pmSn"}],"lY9v":[function(require,module,exports) {
 "use strict";var e=l(require("react")),t=require("react-dom"),r=l(require("./SearchParams"));function l(e){return e&&e.__esModule?e:{default:e}}var u=function(){return e.default.createElement("div",null,e.default.createElement("h1",null,"Adopt Me!"),e.default.createElement(r.default,null))};(0,t.render)(e.default.createElement(u,null),document.getElementById("root"));
 },{"react":"n8MK","react-dom":"NKHc","./SearchParams":"oLoL"}]},{},["lY9v"], null)
-//# sourceMappingURL=/App.b4032043.js.map
+//# sourceMappingURL=App.b4032043.js.map
