@@ -5,9 +5,10 @@
   "description": "react-dom - allows react to be rendered to the browser react native and reactdom share the react package",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html --out-dir docs",
-    "build": "parcel build src/index.html --out-dir docs --public-url ./",
+    "start": "NODE_ENV=development parcel src/index.html --open",
+    "build": "NODE_ENV=production parcel build src/index.html --public-url http://junevarsha.github.io/pet-me",
     "format": "prettier --write \"src/**/*.{js,jsx,html}\"",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
