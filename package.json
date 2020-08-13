@@ -1,13 +1,13 @@
 {
-  "homepage": "http://junevarsha.github.io/pet-me",
+  "homepage": "http://junevarsha.github.io/pet-me/",
   "name": "pet-me",
   "version": "1.0.0",
   "description": "react-dom - allows react to be rendered to the browser react native and reactdom share the react package",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development parcel src/index.html --open",
-    "build": "NODE_ENV=production parcel build src/index.html --public-url http://junevarsha.github.io/pet-me",
     "format": "prettier --write \"src/**/*.{js,jsx,html}\"",
+    "predeploy": "rm -rf dist && parcel build index.html",
     "deploy": "gh-pages -d dist",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
