@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import pet, { ANIMALS } from "@frontendmasters/pet";
+import Results from "./Results";
 import useDropdown from "./useDropdown";
 
 const SearchParams = () => {
@@ -7,6 +8,7 @@ const SearchParams = () => {
   const [breeds, setBreeds] = useState([]);
   const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS);
   const [breed, BreedDropdown, setBreed] = useDropdown("Breed", "", breeds);
+  const [pets, setPets] = useState([]);
 
   // returns a promise
   // wait for this to finish and give me back the data
@@ -32,7 +34,7 @@ const SearchParams = () => {
       const breedStrings = apiBreeds.map(({ name }) => name);
       setBreeds(breedStrings);
     }, console.error);
-  }, [animal, setBreed, setBreeds]);
+  }, [animal]);
 
   return (
     <div className="search-params">
@@ -56,6 +58,7 @@ const SearchParams = () => {
         <BreedDropdown />
         <button>Submit</button>
       </form>
+      <Results pets={pets} />
     </div>
   );
 };
