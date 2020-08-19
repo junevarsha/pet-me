@@ -11,8 +11,8 @@ const App = () => {
         <Link to="/">Adopt Me!</Link>
       </header>
       <Router>
-        <SearchParams path={process.env.PUBLIC_URL + "/"} />
-        <Details path={process.env.PUBLIC_URL + "/details/:id"} />
+        <SearchParams path="/" />
+        <Details path="/details/:id" />
       </Router>
     </div>
   );
