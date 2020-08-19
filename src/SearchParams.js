@@ -8,6 +8,17 @@ const SearchParams = () => {
   const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS);
   const [breed, BreedDropdown, setBreed] = useDropdown("Breed", "", breeds);
 
+  // returns a promise
+  // wait for this to finish and give me back the data
+  async function requestPets() {
+    const { animals } = await pet.animals({
+      location,
+      breed,
+      type: animal,
+    });
+    setPets(animals || []);
+  }
+
   // useEffect is scheduling this to happen after the render happens
   // if dependencies = [] (effect runs only once)
   // breeds is not a dependency because it is not used anywhere in this effect
@@ -26,7 +37,12 @@ const SearchParams = () => {
   return (
     <div className="search-params">
       <h1>{location}</h1>
-      <form>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          requestPets();
+        }}
+      >
         <label htmlFor="location">
           Location
           <input
