@@ -5,6 +5,7 @@
   "description": "react-dom - allows react to be rendered to the browser react native and reactdom share the react package",
   "main": "index.js",
   "scripts": {
+    "clear-build-cache": "rm -rf .cache/ dist/",
     "start": "NODE_ENV=development parcel src/index.html --open",
     "dev:mock": "cross-env PET_MOCK=mock npm run start",
     "format": "prettier --write \"src/**/*.{js,jsx,html}\"",
@@ -24,6 +25,9 @@
     "url": "https://github.com/junevarsha/pet-me/issues"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.2",
     "eslint": "^7.6.0",

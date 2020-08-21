@@ -1,0 +1,16 @@
+arrow fn does not create context
+
+Parcel already has all the babel configs to transpile our code
+
+but some features are experimental.. in that case we need custome babel configs
+to say use our configs instead of yours for this particular feature
+
+bind could be used for this context 
+but it is verryyyyy expensive
+
+chrome fixed it recently
+
+dont use bind instead use arrow fn to preserve this context
+
+error bounderies cannot be done using hooks
+
