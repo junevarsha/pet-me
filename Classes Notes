@@ -12,5 +12,6 @@ chrome fixed it recently
 
 dont use bind instead use arrow fn to preserve this context
 
+Advanced ...
 error bounderies cannot be done using hooks
 
