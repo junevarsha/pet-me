@@ -40,7 +40,9 @@ const SearchParams = () => {
 
   return (
     <div className="search-params">
-      <h1>{location}</h1>
+      <h1>
+        Petfinder API used in this app is limited to SF and Seattle locations
+      </h1>
       <form
         onSubmit={(e) => {
           e.preventDefault();
