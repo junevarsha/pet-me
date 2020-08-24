@@ -14,7 +14,7 @@ const App = () => {
           <header>
             <Link to="/">Adopt Me!</Link>
           </header>
-          <Router basepath="/">
+          <Router basepath="/pet-me">
             <SearchParams path="/" />
             <Details path="/details/:id" />
           </Router>
