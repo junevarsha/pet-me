@@ -12,7 +12,7 @@ const App = () => {
       <ThemeContext.Provider value={themeHook}>
         <div>
           <header>
-            <Link to="/">Adopt Me!</Link>
+            <Link to="/pet-me">Adopt Me!</Link>
           </header>
           <Router basepath="/pet-me">
             <SearchParams path="/" />
