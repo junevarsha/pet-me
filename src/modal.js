@@ -12,7 +12,7 @@ const modalRoot = document.getElementById("modal");
 // modal should be opened and destroyed to avoid
 // memory leaks
 // clean your own garbage
-// renders and renders are there ... so
+// renders and re-renders are there ... so
 // useRef -> refers to same dom elts
 
 const Modal = ({ children }) => {
